@@ -1,0 +1,19 @@
+{
+  "name": "GestionDeGastos",
+  "homepage": "https://github.com/MauroDario/GestionDeGastos",
+  "authors": [
+    "Mauro Dario Luna Ayala <mdla.2004@gmail.com>"
+  ],
+  "description": "Gestion de gastos",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

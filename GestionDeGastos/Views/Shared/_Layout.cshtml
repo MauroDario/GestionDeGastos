@@ -1,12 +1,15 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/materialize.css" rel="stylesheet" />
+    <script src="~/Scripts/materialize.js"></script>
+
 
 </head>
 <body>
@@ -25,6 +28,8 @@
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Frecuencias", "Index", "Frecuencias")</li>
+                    <li>@Html.ActionLink("Categorias", "Index", "Categorias")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -35,6 +40,7 @@
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
         </footer>
     </div>
 
