@@ -7,10 +7,8 @@
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link href="~/Content/materialize.css" rel="stylesheet" />
-    <script src="~/Scripts/materialize.js"></script>
-
-
+    @Scripts.Render("~/bundles/material")
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -40,7 +38,17 @@
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-            <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+            <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+                <a class="btn-floating btn-large red">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 
