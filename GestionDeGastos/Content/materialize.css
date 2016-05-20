@@ -2243,7 +2243,7 @@
  *    without disabling user zoom.
  */
 html {
-  font-family: sans-serif;
+  font-family: Roboto-Bold;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -2255,6 +2255,7 @@ html {
  * Remove default margin.
  */
 body {
+  font-family: Roboto-Bold;
   margin: 0;
 }
 
