@@ -13,6 +13,7 @@ namespace GestionDeGastos.Context
     {
         public DbSet<Frecuencia> Frecuencias { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<TipoCuenta> TipoCuentas { get; set; }
 
         public GestionDeGastosDbContext() : base("DefaultConnection") { }
 

@@ -27,6 +27,14 @@ namespace GestionDeGastos.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.TipoCuentas.AddOrUpdate(
+                p => p.Descripcion,
+                new Models.TipoCuenta { Descripcion = "Cuenta Corriente" },
+                new Models.TipoCuenta { Descripcion = "Billetera" },
+                new Models.TipoCuenta { Descripcion = "Ahorro" },
+                new Models.TipoCuenta { Descripcion = "Otros" }
+                );
+
         }
     }
 }

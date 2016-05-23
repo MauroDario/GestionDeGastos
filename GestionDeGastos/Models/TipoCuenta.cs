@@ -6,10 +6,10 @@ using System.Web;
 
 namespace GestionDeGastos.Models
 {
-    public class Frecuencia
+    public class TipoCuenta
     {
         public int ID { get; set; }
-        [Required(ErrorMessage = "Ingrese un Tipo.")]
-        public string Tipo { get; set; }
+        [Required(ErrorMessage ="Ingrese descripción.")]
+        public string Descripcion { get; set; }
     }
 }
