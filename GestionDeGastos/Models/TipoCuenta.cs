@@ -9,7 +9,7 @@ namespace GestionDeGastos.Models
     public class TipoCuenta
     {
         public int ID { get; set; }
-        [Required(ErrorMessage ="Ingrese descripción.")]
+        [Required(ErrorMessage ="Ingrese descripción. ")]
         public string Descripcion { get; set; }
     }
 }
