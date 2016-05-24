@@ -15,24 +15,12 @@ namespace GestionDeGastos.Migrations
 
         protected override void Seed(GestionDeGastos.Context.GestionDeGastosDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
             context.TipoCuentas.AddOrUpdate(
                 p => p.Descripcion,
-                new Models.TipoCuenta { Descripcion = "Cuenta Corriente" },
-                new Models.TipoCuenta { Descripcion = "Billetera" },
-                new Models.TipoCuenta { Descripcion = "Ahorro" },
-                new Models.TipoCuenta { Descripcion = "Otros" }
+                new Models.TipoCuenta { Descripcion = "Cuenta Corriente",Icono="credit_card", Color = "red" },
+                new Models.TipoCuenta { Descripcion = "Billetera", Icono="attach_money", Color = "green" },
+                new Models.TipoCuenta { Descripcion = "Ahorro", Icono="account_balance", Color = "blue" },
+                new Models.TipoCuenta { Descripcion = "Otros",Icono="gesture", Color="black" }
                 );
 
         }

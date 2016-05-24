@@ -7,46 +7,49 @@
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/material")
+
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <nav class="blue-grey darken-3">
-        <div class="nav-wrapper container ">
-            @Html.ActionLink("Gestion de gastos", "Index", "Home", new { area = "" }, new { @class = "brand-logo" })
-            <ul class="right hide-on-med-and-down">
-                <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                <li>@Html.ActionLink("Frecuencias", "Index", "Frecuencias")</li>
-                <li>@Html.ActionLink("Categorias", "Index", "Categorias")</li>               
-                <li>@Html.ActionLink("tipo", "Index", "TipoCuentas")</li>               
-                
-                @Html.Partial("_LoginPartial")
-            </ul>            
-        </div>
-    </nav>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
-            <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
-                <a class="btn-floating btn-large red">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul>
-                    <li><a class="btn-floating red" href="@Url.Action("Index", "Categorias")"><i class="material-icons">insert_chart</i></a></li>
-                    <li><a class="btn-floating yellow darken-1" href="@Url.Action("Index", "Frecuencias")"><i class="material-icons">format_quote</i></a></li>
-                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    <header>
+        <nav class="blue-grey darken-3">
+            <div class="nav-wrapper container ">
+                @Html.ActionLink("Gestion de gastos", "Index", "Home", new { area = "" }, new { @class = "brand-logo" })
+                <ul class="right hide-on-med-and-down">
+                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Frecuencias", "Index", "Frecuencias")</li>
+                    <li>@Html.ActionLink("Categorias", "Index", "Categorias")</li>
+                    <li>@Html.ActionLink("Cuenta", "Index", "Cuentas")</li>
+
+                    @Html.Partial("_LoginPartial")
                 </ul>
             </div>
-        </footer>
-    </div>
-
-    @Scripts.Render("~/bundles/jquery")
+        </nav>
+    </header>
     
+    <main class="container body-content">
+        @RenderBody()
+        <hr />
+
+    </main>
+    <footer class="page-footer  teal darken-3"> 
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+        <div class="footer-copyright teal darken-4">
+            <div class="container">
+                <p>MB Consultores</p>
+            </div>
+
+        </div>
+    </footer>
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

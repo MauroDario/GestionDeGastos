@@ -1,0 +1,54 @@
+﻿@model GestionDeGastos.Models.Cuenta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cuenta</h4>
+    <hr />
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">
+                @Html.DisplayNameFor(model => model.Nombre)
+            </span>
+
+            <p>
+                @Html.DisplayFor(model => model.Nombre)
+            </p>
+
+            <p>
+                @Html.DisplayNameFor(model => model.Saldo)
+            </p>
+
+            <p>
+                @Html.DisplayFor(model => model.Saldo)
+            </p>
+
+            <p>
+                @Html.DisplayNameFor(model => model.FechaCreacion)
+            </p>
+
+            <dd>
+                @Html.DisplayFor(model => model.FechaCreacion)
+            </dd>
+        </div>
+    </div>
+</div>
+
+<div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red accent-4" href="@Url.Action("Delete", "Cuentas",new { id = Model.ID })">
+        <i class="material-icons">clear</i>
+    </a>
+    <a class="btn-floating btn-large  light-green accent-4" href="@Url.Action("Edit", "Cuentas",new { id = Model.ID })">
+        <i class="material-icons">edit</i>
+    </a>
+</div>
+
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

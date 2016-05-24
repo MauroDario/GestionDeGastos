@@ -170,6 +170,7 @@
     <Compile Include="Context\GestionDeGastosDbContext.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriasController.cs" />
+    <Compile Include="Controllers\CuentasController.cs" />
     <Compile Include="Controllers\FrecuenciasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -193,9 +194,26 @@
     <Compile Include="Migrations\201605231501401_TipoCuenta.Designer.cs">
       <DependentUpon>201605231501401_TipoCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605231554384_Cuentas.cs" />
+    <Compile Include="Migrations\201605231554384_Cuentas.Designer.cs">
+      <DependentUpon>201605231554384_Cuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605241410593_validacionCuneta2.cs" />
+    <Compile Include="Migrations\201605241410593_validacionCuneta2.Designer.cs">
+      <DependentUpon>201605241410593_validacionCuneta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605241513471_icono.cs" />
+    <Compile Include="Migrations\201605241513471_icono.Designer.cs">
+      <DependentUpon>201605241513471_icono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605241525212_color.cs" />
+    <Compile Include="Migrations\201605241525212_color.Designer.cs">
+      <DependentUpon>201605241525212_color.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Categoria.cs" />
+    <Compile Include="Models\Cuenta.cs" />
     <Compile Include="Models\Frecuencia.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -299,6 +317,11 @@
     <Content Include="Views\TipoCuentas\Details.cshtml" />
     <Content Include="Views\TipoCuentas\Edit.cshtml" />
     <Content Include="Views\TipoCuentas\Index.cshtml" />
+    <Content Include="Views\Cuentas\Create.cshtml" />
+    <Content Include="Views\Cuentas\Delete.cshtml" />
+    <Content Include="Views\Cuentas\Details.cshtml" />
+    <Content Include="Views\Cuentas\Edit.cshtml" />
+    <Content Include="Views\Cuentas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -323,6 +346,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605231501401_TipoCuenta.resx">
       <DependentUpon>201605231501401_TipoCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605231554384_Cuentas.resx">
+      <DependentUpon>201605231554384_Cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605241410593_validacionCuneta2.resx">
+      <DependentUpon>201605241410593_validacionCuneta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605241513471_icono.resx">
+      <DependentUpon>201605241513471_icono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605241525212_color.resx">
+      <DependentUpon>201605241525212_color.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
